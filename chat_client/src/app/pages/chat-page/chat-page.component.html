@@ -1,0 +1,41 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+
+<div class="mainDiv">
+    <div class="usrInfoContainer" *ngIf="!isLoggedIn">
+        <div class="usrInfoDiv">
+            <h1>Welcome</h1>
+            <p id="usrName">User Name: </p>
+            <input  class="usrInfo" type="text" [(ngModel)]="sender" />
+            <p>Room ID: </p>
+            <input  class="usrInfo" type="text" [(ngModel)]="roomId" />
+            <button id="joinBtn" (click)="joinRoom(roomId)">Join</button>
+        </div>
+    </div>
+    <div class="chatDiv" *ngIf="isLoggedIn">
+        <div class="roomContainer">
+            <div class="roomDiv">
+                <h1 id="usrInfoH"><span id="signP">Signed in as:</span> {{sender}}</h1>
+                <button id="roomBtn">#{{roomId}}</button>
+            </div>
+        </div>
+        <div class="msgContainer">
+            <div class="roomInfoDiv">
+                <p>Room: {{roomId}}</p>
+            </div>
+            <div class="msgDiv">
+                <div class="msgD" *ngFor="let msg of messages">
+                    <p id="senderP">{{msg.sender}} <span id="timeP">{{msg.time}}</span></p>
+                    <p id="msgP">{{msg.senderMsg}}</p>
+                </div>
+            </div>
+            <div class="msgSendDiv">
+                <input id="msgInput" type="text" [(ngModel)]="newMsg" placeholder="message" />
+                <button id="msgSendBtn" (click)="sendMessage(newMsg)">Send</button>
+            </div>
+        </div>
+        
+    </div>
+</div>

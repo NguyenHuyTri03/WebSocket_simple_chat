@@ -1,0 +1,241 @@
+.mainDiv{
+    width: 118rem;
+    height: 60.1rem;
+    background-color: #26282c;
+    margin: -.4%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 1rem;
+}
+
+.usrInfoContainer{
+    // position: absolute;
+    border-radius: 7px;
+    width: 20rem;
+    height: 20rem;
+    background-color: #3f4249;
+    padding: 2rem;
+    margin: auto auto;
+    margin-top: 12%;
+}
+
+.usrInfoDiv{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #dfe0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.usrInfoDiv > h1{
+    text-align: center;
+    margin-top: -2%;
+}
+
+#usrName{
+    margin-top: -.4%;
+}
+
+.usrInfo{
+    border-radius: 5px;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background-color: #2d2f33;
+    color: #dfe0e0;
+    font-size: 1rem;
+    padding: .5rem;
+    margin-top: -4%;
+}
+
+.usrInfo:focus{
+    outline-style: none;
+}
+
+#joinBtn{
+    background-color: #5865F2;    
+    color: #f0f0f0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10%;
+    padding: .5rem;
+}
+
+#joinBtn:hover{
+    cursor: pointer;
+    background-color: #4551da; 
+}
+
+
+// chatDiv
+.chatDiv{
+    font-family: 'Ubuntu', sans-serif;
+    color: #BBBDBF;
+    height: 62rem;
+    background-color: #202226;
+    display: flex;
+    flex-direction: row;
+    margin: -.8%;
+}
+
+.roomContainer{
+    width: 20rem;
+    background-color: #2F3137;
+    padding: 1rem;
+}
+
+.roomDiv{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.roomBtn{
+    margin-top: 2%;
+}
+
+.msgContainer{
+    width: 97em;
+    background-color: #35383E;
+    padding: 1rem;
+}
+
+.roomInfoDiv{
+    font-size: 1.5rem;
+    width: 97rem;
+    position: absolute;
+    background-color: #35383E;
+    padding-left: 1rem;
+    margin-top: -.8%;
+    margin-left: -.8%;
+    box-shadow: -3px 5px 2px -4px rgba(0,0,0,0.75);
+}
+
+.msgDiv{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    position: absolute;
+    height: 50rem;
+    bottom: 0;
+    background-color: #35383E;
+    // background-color: red;
+    position: relative;
+    margin-top: 4.5%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.msgs{
+    // display: flex;
+    // flex-direction: column;
+    // background-color: red;
+    height: 48.3rem;
+    width: 95rem;
+    font-size: 1.1rem;
+    padding: 1rem;
+    // justify-content: flex-start;
+    // align-items: flex-start;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.msgs > p{    
+    
+    bottom: 0;
+    left: 0;
+}
+
+.msgSendDiv{
+    border: none;
+    border-radius: 7px;
+    background-color: #40444B;
+    // background-color: red;
+    padding: .5rem;
+    margin-top: 2%;
+}
+
+#msgInput{
+    border: none;
+    border-radius: 6px;
+    color: #c6c8ca;
+    background-color: #40444B;
+    width: 90rem;
+    font-size: 1.2rem;
+    padding: .2rem;
+}
+
+#msgSendBtn{
+    color: #f3f3f3;
+    background-color: #5865F2; 
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    padding: .3rem;
+    margin-left: 1.2%;
+}
+
+.msgD{
+    padding: 1%;
+}
+
+#msgInput:focus{
+    outline-style: none;
+}
+
+#msgSendBtn:hover{
+    cursor: pointer;
+    background-color: #404ccf;
+}
+
+#senderP{
+    font-weight: 500;
+    margin-top: -.1%;
+    font-size: 1.3rem;
+}
+
+#timeP{
+    font-size: .7rem;
+    margin-left: .5%;
+}
+
+#msgP{
+    font-size: 1.1rem;
+    margin-top: -1%;
+    margin-left: 1%;
+    border-top: 2px;
+    border-top-color: #95a5cc;
+}
+
+.msgD:hover{
+    background-color: rgb(51, 53, 58);
+}
+
+#signP{
+    font-size: 1rem;
+}
+
+#usrInfoH{
+    margin-left: -10%;
+}
+
+#roomBtn{
+    color: #c6c8ca;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-top-color: #BBBDBF;
+    padding: 1.5rem;
+    text-align: left;
+    font-size: 1.4rem;
+    background-color: transparent;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+#roomBtn:hover{
+    cursor: pointer;
+    background-color: #3f4249;
+}
